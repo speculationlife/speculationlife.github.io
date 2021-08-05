@@ -1,15 +1,14 @@
----
-layout: page
-title: About
-permalink: /about/
----
+layout 	title 	permalink
+page
+	
+About
+	
+/about/
 
 Some information about you!
+More Information
 
-### More Information
+A place to include any other types of information that you'd like to include about yourself.
+Contact me
 
-一个野生程序.
-
-### Contact me
-
-[email@domain.com](guoqiang:8376282@qq.com)
+email@domain.com
