@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-一个很佛系的人!
+自强不息，厚德载物!
 
 ### More Information
 
