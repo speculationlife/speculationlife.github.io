@@ -1,2 +1,44 @@
-# 由于工作中需要写c++，每次都感觉都慌得一批：
-# 特写此文，记录一下学习得内容
+由于工作中需要写c++，每次都感觉都慌得一批：
+特写此文，记录一下学习得内容
+使用libcurl库调用http接口：
+
+size_t write_callback(char* ptr, size_t size, size_t nmemb, void* userdata)
+{
+	((std::string*)userdata)->append(ptr, nmemb);
+	return nmemb;
+}
+
+int main(void)
+{   
+
+	CURL* curl;
+	CURLcode res;
+
+	curl_global_init(CURL_GLOBAL_ALL);
+
+	curl = curl_easy_init();
+	std::string response_data;
+	struct curl_slist* header = NULL;
+	if (curl) {
+		curl_easy_setopt(curl, CURLOPT_URL, "localhost:8080/1");
+		//curl_easy_setopt(curl, CURLOPT_URL, "www.baidu.com");
+		//curl_easy_setopt(curl, CURLOPT_POSTFIELDS, "name=daniel&project=curl");
+		curl_easy_setopt(curl, CURLOPT_HTTPHEADER, header);
+		curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_callback);
+		curl_easy_setopt(curl, CURLOPT_WRITEDATA, &response_data);
+		
+		res = curl_easy_perform(curl);
+		
+		if (res != CURLE_OK) 
+		{
+			fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
+		}else{
+			//printf(response_data.c_str());
+			std:cout << response_data << endl;
+		}
+		curl_easy_cleanup(curl);
+	}
+
+	curl_global_cleanup();
+  return 0；
+  }
