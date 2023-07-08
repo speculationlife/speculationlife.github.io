@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-自强不息，厚德载物!
+自命不凡，破釜沉舟!
 
 ### More Information
 
