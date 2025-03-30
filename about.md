@@ -12,4 +12,4 @@ permalink: /about/
 
 ### Contact me
 
-[https://t.me/bestchest666](mailto:email@domain.com)
+[t.me/bestchest666](mailto:email@domain.com)
