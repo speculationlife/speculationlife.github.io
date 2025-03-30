@@ -12,4 +12,4 @@ permalink: /about/
 
 ### Contact me
 
-[guoqiang66688@gmail.com](mailto:email@domain.com)
+[https://t.me/bestchest666](mailto:email@domain.com)
