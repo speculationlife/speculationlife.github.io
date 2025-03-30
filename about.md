@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-自命不凡，破釜沉舟，一个佛系的程序员。
+自命不凡，破釜沉舟，一个一个很low的程序员，很菜
 
 ### More Information
 
-研究方向1：嵌入式、CAD
-研究方向2：金融，量化交易
+干过几年Java，写过python,做过汽车电子，写过C++
 
 ### Contact me
 
