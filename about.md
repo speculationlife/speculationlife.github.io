@@ -12,4 +12,4 @@ permalink: /about/
 
 ### Contact me
 
-[Contact me](t.me/haiOuOnline)
+[Telegram](https://t.me/haiOuOnline)
